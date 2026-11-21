@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Inmobiliario Demo - Listado de Propiedades</title>
+</head>
+<body>
+    <header>
+        <h1>Propiedades Destacadas (Entorno Sandbox)</h1>
+    </header>
+
+    <main id="listings-container">
+        <!-- Propiedad 1: Datos completos -->
+        <article class="property-card" data-id="PROP-101">
+            <h2 class="property-title">  Apartamento Moderno en Altamira  </h2>
+            <span class="property-price">$ 145,000 USD</span>
+            <p class="property-location">Caracas, Chacao</p>
+            <ul class="property-features">
+                <li class="beds">3 Hab.</li>
+                <li class="baths">2 Baños</li>
+                <li class="area">115 m²</li>
+            </ul>
+            <span class="agent-name">Agente: Demo User 1</span>
+        </article>
+
+        <!-- Propiedad 2: Precio con formato distinto y espacio extra -->
+        <article class="property-card" data-id="PROP-102">
+            <h2 class="property-title">Quinta Familiar con Jardín</h2>
+            <span class="property-price">USD 320.000,00</span>
+            <p class="property-location">Caracas, Baruta</p>
+            <ul class="property-features">
+                <li class="beds">4 Hab.</li>
+                <li class="baths">4 Baños</li>
+                <li class="area">340 m²</li>
+            </ul>
+            <span class="agent-name">Agente: Demo User 2</span>
+        </article>
+
+        <!-- Propiedad 3: Dato financiero faltante (Ideal para probar tu limpieza en Pandas) -->
+        <article class="property-card" data-id="PROP-103">
+            <h2 class="property-title">Loft Ejecutivo Amoblado</h2>
+            <span class="property-price">Consultar Precio</span>
+            <p class="property-location">Valencia, Naguanagua</p>
+            <ul class="property-features">
+                <li class="beds">1 Hab.</li>
+                <li class="baths">1 Baño</li>
+                <li class="area">62 m²</li>
+            </ul>
+            <span class="agent-name">Agente: Demo User 1</span>
+        </article>
+
+        <!-- Propiedad 4: Sin área especificada -->
+        <article class="property-card" data-id="PROP-104">
+            <h2 class="property-title">Local Comercial en Centro Empresarial</h2>
+            <span class="property-price">$85,500</span>
+            <p class="property-location">Maracaibo, Bella Vista</p>
+            <ul class="property-features">
+                <li class="beds">0 Hab.</li>
+                <li class="baths">1 Baño</li>
+                <!-- Área omitida intencionalmente -->
+            </ul>
+            <span class="agent-name">Agente: Demo User 3</span>
+        </article>
+    </main>
+</body>
+</html>
