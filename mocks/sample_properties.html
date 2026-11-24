@@ -1,66 +1,33 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Portal Inmobiliario Demo - Listado de Propiedades</title>
-</head>
+<html>
+<head><title>Portal Inmobiliario de Prueba</title></head>
 <body>
-    <header>
-        <h1>Propiedades Destacadas (Entorno Sandbox)</h1>
-    </header>
+    <div class="properties-container">
+        <!-- Propiedad 1: Completa -->
+        <div class="property-card" data-id="RE-2026-001">
+            <h2 class="property-title">Espectacular Apartamento Moderno Vista al Mar</h2>
+            <span class="property-price">$145,000 USD</span>
+            <div class="property-location">La Castellana, Caracas</div>
+            <div class="property-features">3 hab | 2 baños | 120 m² de construcción</div>
+            <a class="property-link" href="https://ejemplo-inmobiliaria.com/propiedad/RE-2026-001">Ver Detalles</a>
+        </div>
 
-    <main id="listings-container">
-        <!-- Propiedad 1: Datos completos -->
-        <article class="property-card" data-id="PROP-101">
-            <h2 class="property-title">  Apartamento Moderno en Altamira  </h2>
-            <span class="property-price">$ 145,000 USD</span>
-            <p class="property-location">Caracas, Chacao</p>
-            <ul class="property-features">
-                <li class="beds">3 Hab.</li>
-                <li class="baths">2 Baños</li>
-                <li class="area">115 m²</li>
-            </ul>
-            <span class="agent-name">Agente: Demo User 1</span>
-        </article>
+        <!-- Propiedad 2: Variación de moneda y faltan baños -->
+        <div class="property-card" data-id="RE-2026-002">
+            <h2 class="property-title">Penthouse de Lujo Minimalista</h2>
+            <span class="property-price">280.000 EUR</span>
+            <div class="property-location">Las Mercedes, Caracas</div>
+            <div class="property-features">4 habitaciones | 350mt2 construidos</div>
+            <a class="property-link" href="https://ejemplo-inmobiliaria.com/propiedad/RE-2026-002">Ver Detalles</a>
+        </div>
 
-        <!-- Propiedad 2: Precio con formato distinto y espacio extra -->
-        <article class="property-card" data-id="PROP-102">
-            <h2 class="property-title">Quinta Familiar con Jardín</h2>
-            <span class="property-price">USD 320.000,00</span>
-            <p class="property-location">Caracas, Baruta</p>
-            <ul class="property-features">
-                <li class="beds">4 Hab.</li>
-                <li class="baths">4 Baños</li>
-                <li class="area">340 m²</li>
-            </ul>
-            <span class="agent-name">Agente: Demo User 2</span>
-        </article>
-
-        <!-- Propiedad 3: Dato financiero faltante (Ideal para probar tu limpieza en Pandas) -->
-        <article class="property-card" data-id="PROP-103">
-            <h2 class="property-title">Loft Ejecutivo Amoblado</h2>
-            <span class="property-price">Consultar Precio</span>
-            <p class="property-location">Valencia, Naguanagua</p>
-            <ul class="property-features">
-                <li class="beds">1 Hab.</li>
-                <li class="baths">1 Baño</li>
-                <li class="area">62 m²</li>
-            </ul>
-            <span class="agent-name">Agente: Demo User 1</span>
-        </article>
-
-        <!-- Propiedad 4: Sin área especificada -->
-        <article class="property-card" data-id="PROP-104">
-            <h2 class="property-title">Local Comercial en Centro Empresarial</h2>
-            <span class="property-price">$85,500</span>
-            <p class="property-location">Maracaibo, Bella Vista</p>
-            <ul class="property-features">
-                <li class="beds">0 Hab.</li>
-                <li class="baths">1 Baño</li>
-                <!-- Área omitida intencionalmente -->
-            </ul>
-            <span class="agent-name">Agente: Demo User 3</span>
-        </article>
-    </main>
+        <!-- Propiedad 3: Datos corruptos o mínimos (Prueba de robustez try-except) -->
+        <div class="property-card">
+            <h2 class="property-title">Casa de Campo a Remodelar</h2>
+            <span class="property-price">Precio a consultar</span>
+            <div class="property-location">El Hatillo</div>
+            <div class="property-features">500 m2</div>
+        </div>
+    </div>
 </body>
 </html>
